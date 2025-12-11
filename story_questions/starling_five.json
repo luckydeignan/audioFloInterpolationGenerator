@@ -1,0 +1,66 @@
+{
+    "text_title": "The Starling Five",
+    "difficulty": "Easy",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main mission of the crew on the ship 'The Finch'?",
+        "options": {
+          "A": "To fight a space battle against aliens.",
+          "B": "To rescue a stranded ship.",
+          "C": "To explore a new star system.",
+          "D": "To deliver supplies to a space station."
+        },
+        "correct_answer": "C",
+        "citation": ""
+      },
+      {
+        "id": 2,
+        "question": "What problem does the crew discover on the third day?",
+        "options": {
+          "A": "They ran out of food.",
+          "B": "Oxygen levels are slowly dropping.",
+          "C": "The navigation computer is broken.",
+          "D": "The radio is making strange noises."
+        },
+        "correct_answer": "B",
+        "citation": ""
+      },
+      {
+        "id": 3,
+        "question": "What caused the problem on the ship?",
+        "options": {
+          "A": "A tiny crack (microfracture) in a pipe.",
+          "B": "A mistake made by the pilot.",
+          "C": "A meteor hit the ship.",
+          "D": "The engine overheated."
+        },
+        "correct_answer": "A",
+        "citation": ""
+      },
+      {
+        "id": 4,
+        "question": "Why can't the crew fly the ship back home?",
+        "options": {
+          "A": "They don't want to leave yet.",
+          "B": "The ship doesn't have enough power to jump back.",
+          "C": "They lost the map to Earth.",
+          "D": "The captain refuses to turn around."
+        },
+        "correct_answer": "B",
+        "citation": ""
+      },
+      {
+        "id": 5,
+        "question": "How does the story end for the crew?",
+        "options": {
+          "A": "They fix the ship at the last minute.",
+          "B": "They are rescued by another ship.",
+          "C": "They drift into unconsciousness together.",
+          "D": "They land on a planet and build a house."
+        },
+        "correct_answer": "C",
+        "citation": ""
+      }
+    ]
+  }

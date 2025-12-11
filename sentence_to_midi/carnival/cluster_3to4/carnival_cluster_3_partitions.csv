@@ -1,0 +1,43 @@
+Partition,ID,Text,V_pred,A_pred,Word_Count
+1,21,Then her phone buzzed.,0.43212533,0.38071406,4
+1,22,At first she ignored it.,0.42028293,0.2493425,5
+1,23,"But when it buzzed again, then again, something uneasy stirred in her stomach.",0.15643272,0.5863521,13
+1,24,She pulled it out: three missed calls from Mom.,0.29180548,0.42036563,9
+1,25,"Her father’s name appeared on the fourth call, though he rarely phoned her directly.",0.36438406,0.29974848,14
+2,26,Lucy answered. “Dad?,0.4189645,0.22898512,3
+2,27,I’m at the carnival—” His voice was the sound that changed the summer. “Lucy… your grandmother collapsed.,0.14234564,0.39765036,17
+2,28,She’s at the hospital.,0.115547575,0.40386513,4
+2,29,"It’s not good.” The carnival noises muted around her, as though pushed behind a thick wall of glass.",0.14169794,0.39046273,18
+3,30,"Fireworks still exploded overhead, but they felt wrong now—too loud, too bright, too alive. “We’re coming to get you and Theo,” her father said. “Stay where you are.” Lucy hung up, her hands trembling.",0.06831756,0.43757835,34
+3,31,"Theo looked at her, still grinning from the fireworks. “What’s wrong?” Lucy didn’t know how to say it.",0.08283968,0.3186566,18
+4,32,So she just took his hand and held it tightly until their parents arrived.,0.11814328,0.29894844,14
+4,33,The ride to the hospital was quiet except for the hum of tires on asphalt.,0.28957683,0.24169147,15
+4,34,Theo asked questions their parents didn’t answer.,0.31555054,0.21569984,7
+4,35,Lucy stared out the window at the fading fireworks in the distance.,0.25641185,0.22313522,12
+5,36,"Just an hour earlier, she’d wished the night would last forever.",0.34335074,0.24742249,11
+5,37,"Be careful what you wish for, she thought bitterly.",0.11488124,0.42985857,9
+5,38,Beautiful things only last because they end.,0.20837232,0.36517465,7
+5,39,"At the hospital, the sterile smell and harsh lighting crushed the last remnants of carnival magic.",0.09127653,0.34842107,16
+6,40,"Lucy’s grandmother—Nana Jo—had always been the warmest part of their family, the one who baked cookies on random Tuesdays and told stories with hands that danced like birds.",0.34096676,0.28681636,28
+6,41,"Now she lay still and pale, machines doing the breathing she once did with laughter.",0.07040506,0.31409508,15
+7,42,Lucy stayed by her bedside long after Theo fell asleep in a waiting-room chair.,0.23637797,0.2133224,14
+7,43,"She whispered memories, hoping Nana Jo could hear them: the summer picnics at the lake, the way she hummed old songs while folding laundry, the time she taught Lucy to sew a crooked little pillow shaped like a star.",0.26627266,0.26657042,39
+8,44,"But the machines kept beeping in steady, indifferent rhythm.",0.1343988,0.27401713,9
+8,45,"Around dawn, a nurse gently squeezed her shoulder. “She’s fading,” she said softly.",0.09075476,0.21566355,13
+8,46,Lucy’s parents woke Theo.,0.23831083,0.19331877,4
+9,47,"The four of them stood around the bed as the monitors slowed, then stuttered, then softened into a flat silence.",0.06373712,0.28158972,20
+9,48,The absence of sound was unbearable.,0.03691176,0.3195497,6
+9,49,"When they returned home later, the carnival was gone.",0.22663149,0.23831387,9
+9,50,Not literally—they could still see its Ferris wheel rising over the boardwalk from their window.,0.38133037,0.17590222,15
+10,51,"But for Lucy, its joy was now unreachable, locked behind grief’s heavy curtain.",0.07495475,0.27960458,13
+10,52,"Even the distant laughter drifting from the rides felt intrusive, almost cruel.",0.07010788,0.4280642,12
+10,53,"The following day, her friends begged her to come back to the festival, to “get her mind off things.” But Lucy couldn’t imagine stepping into that world again.",0.08132168,0.31282577,28
+11,54,"The colors would be too bright, the music too upbeat, the smells too sweet.",0.16561344,0.26440778,14
+11,55,"The carnival would go on, of course.",0.37707415,0.19571504,7
+11,56,Joy was stubborn that way.,0.39564687,0.18902512,5
+11,57,But hers was dimmed now.,0.21373194,0.21504359,5
+11,58,"Each night she listened to the echoes of fireworks, remembering how they once made her feel.",0.16995941,0.21415418,16
+12,59,"Remembering how quickly feelings could collapse, like tents being packed away.",0.16019309,0.24701402,11
+12,60,"On the last night of the carnival, she finally forced herself to walk to the boardwalk.",0.2793936,0.19177288,16
+12,61,Not to ride anything—just to say goodbye to the season she’d started so happily.,0.2024563,0.18246165,14
+12,62,The Ferris wheel spun slowly against the night sky.,0.4223752,0.1700564,9

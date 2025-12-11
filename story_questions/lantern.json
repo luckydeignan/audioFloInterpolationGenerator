@@ -1,0 +1,66 @@
+{
+    "text_title": "The Lantern in the Window",
+    "difficulty": "Easy",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What object does Mara find in her cabinet and place in the window?",
+        "options": {
+          "A": "A wooden clock",
+          "B": "A brass lantern",
+          "C": "A string of holiday lights",
+          "D": "A vase of flowers"
+        },
+        "correct_answer": "B",
+        "citation": ""
+      },
+      {
+        "id": 2,
+        "question": "Why is Mara living alone in the house?",
+        "options": {
+          "A": "Her husband, Eli, passed away.",
+          "B": "Her children moved out for college.",
+          "C": "She just moved to a new city.",
+          "D": "She prefers to live by herself."
+        },
+        "correct_answer": "A",
+        "citation": ""
+      },
+      {
+        "id": 3,
+        "question": "Who knocks on Mara’s door to talk to her?",
+        "options": {
+          "A": "A delivery driver",
+          "B": "The mailman",
+          "C": "Sara, a neighbor who walks her dog",
+          "D": "An old friend of Eli’s"
+        },
+        "correct_answer": "C",
+        "citation": ""
+      },
+      {
+        "id": 4,
+        "question": "What does the neighbor say about the lantern?",
+        "options": {
+          "A": "It is too bright and keeps her awake.",
+          "B": "It makes the street feel less lonely.",
+          "C": "It looks like it might cause a fire.",
+          "D": "It reminds her of her own childhood."
+        },
+        "correct_answer": "B",
+        "citation": ""
+      },
+      {
+        "id": 5,
+        "question": "What happens on the next street by the end of the story?",
+        "options": {
+          "A": "The streetlights stop working.",
+          "B": "People start complaining about the lights.",
+          "C": "Other neighbors begin putting small lights in their windows too.",
+          "D": "Everyone decides to move away."
+        },
+        "correct_answer": "C",
+        "citation": ""
+      }
+    ]
+  }

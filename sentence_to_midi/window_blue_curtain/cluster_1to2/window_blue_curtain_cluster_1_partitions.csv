@@ -1,0 +1,32 @@
+Partition,ID,Text,V_pred,A_pred,Word_Count
+1,1,"When the winter finally broke, Jonas still kept the blue curtain drawn over the single front window of his small apartment.",0.40199584,0.1761861,21
+1,2,"It had been there since Mara left—just four months, though the days felt stretched and brittle, like thin ice over deep water.",0.2981175,0.20907366,22
+2,3,Every morning he woke to the pale navy light bleeding through the fabric.,0.39646548,0.15526298,13
+2,4,Every morning he told himself he would take it down.,0.32037908,0.20175989,10
+3,5,"And every morning, he couldn’t.",0.17884551,0.21289717,5
+3,6,The apartment felt silent in a way that suggested sound had once lived there.,0.15788183,0.2181255,14
+3,7,"Two mismatched mugs on the counter, one with a small chip.",0.32695955,0.17695591,11
+3,8,"A pair of slippers, soft and worn, still sitting neatly by the door.",0.32253727,0.1891396,13
+4,9,"Jonas moved through the space with the heavy, automatic motions of someone navigating a museum of their own grief.",0.11259012,0.22631207,19
+4,10,"He worked from home now—less by choice, more because he couldn’t stand taking the metro and seeing other people living their regular, busy lives.",0.30174798,0.22325917,24
+5,11,"His job in data analysis asked very little of him emotionally, which was perfect; he felt he had little left to give.",0.22282152,0.19500524,22
+5,12,"On a Thursday morning in early March, a knock interrupted his routine.",0.41365576,0.17859381,12
+5,13,Three short taps.,0.41255438,0.19288266,3
+6,14,Jonas rarely received visitors.,0.41956654,0.19849396,4
+6,15,For a moment he froze—the kind that comes before remembering you’re still in a world where doors open.,0.29287195,0.43584126,18
+6,16,"When he answered, an elderly woman stood in the hallway, leaning on a cane shaped like a curlicue of dark wood.",0.41109627,0.24408105,21
+7,17,"She wore a wool coat too warm for the weather and a wool hat too large for her head, giving her a slightly magical appearance, as though she might disappear if he blinked too slowly. “Are you Jonas Miller?” she asked. “Yes.” “I’m Mrs.",0.4422884,0.20422833,44
+7,18,Weller.,0.43316573,0.20399517,1
+7,19,I live downstairs.,0.44241166,0.17860416,3
+8,20,There’s… an issue with the birds.” Jonas blinked. “The birds?” “They’re building a nest in your air-conditioning unit.,0.3099229,0.38586468,18
+8,21,They’ve been dropping twigs on my balcony.,0.2858804,0.44407037,7
+8,22,"I thought you should know.” It wasn’t the kind of emergency most people would panic about, but the woman’s expression was earnest.",0.37231347,0.3063093,22
+9,23,"Jonas nodded, grabbed a jacket, and followed her downstairs.",0.4326419,0.19379546,9
+9,24,"Outside her window, small brown sparrows darted in and out of the slats of his A/C unit, each carrying a bit of fluff or twig.",0.45869055,0.1686952,25
+10,25,Mrs.,0.45369935,0.21883917,1
+10,26,"Weller frowned as though she personally disapproved of their architectural choices. “They’re sweet little things, but I’m afraid something will catch fire come summer,” she said. “I’ll clear it out,” Jonas said softly.",0.4616142,0.16280974,33
+11,27,She watched him for a long moment. “You’ve been quiet these months.,0.38919103,0.26451582,12
+11,28,I worried about you.” Jonas tensed. “Just been busy.” Mrs.,0.40872437,0.28339443,10
+11,29,"Weller nodded, but he could tell she knew better. “People are like these birds,” she said. “We make our messes where we can.",0.3945153,0.20187762,23
+12,30,"But sometimes someone needs to clear away the twigs.” It was a strange metaphor, yet something in it cracked the shell Jonas had been wearing like a second skin.",0.42598876,0.23802151,29
+12,31,He spent the next hour gently removing the small nest.,0.46316636,0.23358934,10

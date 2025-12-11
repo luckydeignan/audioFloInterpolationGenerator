@@ -1,140 +1,138 @@
-# Status
-
-This repository is currently inactive and serves only as a supplement some of our papers. We have transitioned to using individual repositories for new projects. For our current work, see the [Magenta website](https://g.co/magenta) and [Magenta GitHub Organization](https://github.com/magenta).
-
-# Magenta
+# Emotion-to-Music Pipeline
 
 <img src="magenta-logo-bg.png" height="75">
 
-[![Build Status](https://github.com/magenta/magenta/workflows/build/badge.svg)](https://github.com/magenta/magenta/actions?query=workflow%3Abuild)
- [![PyPI version](https://badge.fury.io/py/magenta.svg)](https://badge.fury.io/py/magenta)
+This repository extends Google's [Magenta](https://github.com/magenta/magenta) project with a custom pipeline for generating music that maps to emotional trajectories in narrative text. The pipeline extracts emotional clusters from stories and uses MusicVAE to generate interpolated musical transitions between emotional states.
 
-**Magenta** is a research project exploring the role of machine learning
-in the process of creating art and music.  Primarily this
-involves developing new deep learning and reinforcement learning
-algorithms for generating songs, images, drawings, and other materials. But it's also
-an exploration in building smart tools and interfaces that allow
-artists and musicians to extend (not replace!) their processes using
-these models.  Magenta was started by some researchers and engineers
-from the [Google Brain team](https://research.google.com/teams/brain/),
-but many others have contributed significantly to the project. We use
-[TensorFlow](https://www.tensorflow.org) and release our models and
-tools in open source on this GitHub.  If you’d like to learn more
-about Magenta, check out our [blog](https://magenta.tensorflow.org),
-where we post technical details.  You can also join our [discussion
-group](https://groups.google.com/a/tensorflow.org/forum/#!forum/magenta-discuss).
+## Project Overview
 
-This is the home for our Python TensorFlow library. To use our models in the browser with [TensorFlow.js](https://js.tensorflow.org/), head to the [Magenta.js](https://github.com/tensorflow/magenta-js) repository.
+The core pipeline works as follows:
 
-## Getting Started
+1. **Extract emotional clusters** from story text (external process)
+2. **Find nearest MIDI matches** for each emotional cluster centroid
+3. **Extract piano melodies** from matched MIDI files
+4. **Generate interpolations** between cluster endpoints using MusicVAE
+5. **Segment story sentences** into partitions matching interpolation outputs
+6. **Map MIDI files** to sentence partitions for synchronized playback
 
-Take a look at our [colab notebooks](https://magenta.tensorflow.org/demos/colab/) for various models, including one on [getting started](https://colab.research.google.com/notebooks/magenta/hello_magenta/hello_magenta.ipynb).
-[Magenta.js](https://github.com/tensorflow/magenta-js) is also a good resource for models and [demos](https://magenta.tensorflow.org/demos/web/) that run in the browser.
-This and more, including [blog posts](https://magenta.tensorflow.org/blog) and [Ableton Live plugins](https://magenta.tensorflow.org/demos/native/), can be found at [https://magenta.tensorflow.org](https://magenta.tensorflow.org).
+## Custom Directories
 
-## Magenta Repo
+This repository includes several custom additions for the emotion-to-music pipeline:
 
-* [Installation](#installation)
-* [Using Magenta](#using-magenta)
-* [Development Environment (Advanced)](#development-environment)
+| Directory | Description |
+|-----------|-------------|
+| [`cluster_nearest_neighbors/`](cluster_nearest_neighbors/) | MusicVAE configuration files and cluster statistics for each story |
+| [`data_processing/`](data_processing/) | Utility scripts for MIDI/audio conversion and playback |
+| [`partitioning_sentences/`](partitioning_sentences/) | Scripts for segmenting story sentences into equal-length partitions |
+| [`sentence_to_midi/`](sentence_to_midi/) | MIDI-to-sentence mapping outputs and scripts |
 
-## Installation
+## Stories
 
-Magenta maintains a [pip package](https://pypi.python.org/pypi/magenta) for easy
-installation. We recommend using Anaconda to install it, but it can work in any
-standard Python environment. We support Python 3 (>= 3.5). These instructions
-will assume you are using Anaconda.
+The pipeline has been configured for four stories:
 
-### Automated Install (w/ Anaconda)
+- **carnival** - A carnival-themed narrative
+- **lantern** - A lantern-themed narrative  
+- **starling_five** - A narrative involving starlings
+- **window_blue_curtain** - A narrative with window/curtain imagery
 
-If you are running Mac OS X or Ubuntu, you can try using our automated
-installation script. Just paste the following command into your terminal.
+Each story has its own subdirectory in `cluster_nearest_neighbors/` and `sentence_to_midi/` containing configuration and output files.
 
-```bash
-curl https://raw.githubusercontent.com/tensorflow/magenta/main/magenta/tools/magenta-install.sh > /tmp/magenta-install.sh
-bash /tmp/magenta-install.sh
-```
+## Quick Start
 
-After the script completes, open a new terminal window so the environment
-variable changes take effect.
+### Prerequisites
 
-The Magenta libraries are now available for use within Python programs and
-Jupyter notebooks, and the Magenta scripts are installed in your path!
+- Python 3.x with Magenta installed (`pip install magenta`)
+- [FluidSynth](https://www.fluidsynth.org/) for MIDI-to-audio conversion
+- [FFmpeg](https://ffmpeg.org/) for audio format conversion (optional)
 
-Note that you will need to run `source activate magenta` to use Magenta every
-time you open a new terminal window.
+### Running Interpolations
 
-### Manual Install (w/o Anaconda)
-
-If the automated script fails for any reason, or you'd prefer to install by
-hand, do the following steps.
-
-Install the Magenta pip package:
+Use the batch script to generate all MusicVAE interpolations:
 
 ```bash
-pip install magenta
+run_interps.bat
 ```
 
-**NOTE**: In order to install the `rtmidi` package that we depend on, you may need to install headers for some sound libraries. On Ubuntu Linux, this command should install the necessary packages:
+Or run individual interpolations using the JSON config files:
 
 ```bash
-sudo apt-get install build-essential libasound2-dev libjack-dev portaudio19-dev
-```
-On Fedora Linux, use
-```bash
-sudo dnf group install "C Development Tools and Libraries"
-sudo dnf install SAASound-devel jack-audio-connection-kit-devel portaudio-devel
+music_vae_generate --json_config=cluster_nearest_neighbors/carnival/config_1to2.json
 ```
 
+### Processing Pipeline
 
-The Magenta libraries are now available for use within Python programs and
-Jupyter notebooks, and the Magenta scripts are installed in your path!
+1. **Extract piano melodies** from source MIDI files:
+   ```bash
+   python data_processing/extract_piano_melody.py
+   ```
 
-## Using Magenta
+2. **Run MusicVAE interpolations**:
+   ```bash
+   run_interps.bat
+   ```
 
-You can now train our various models and use them to generate music, audio, and images. You can
-find instructions for each of the models by exploring the [models directory](magenta/models).
+3. **Segment story sentences** into partitions:
+   ```bash
+   python partitioning_sentences/segment_story_sentences.py
+   ```
 
-## Development Environment
-If you want to develop on Magenta, you'll need to set up the full Development Environment.
+4. **Map MIDI files** to sentence partitions:
+   ```bash
+   python sentence_to_midi/map_midi_to_sentences.py
+   ```
 
-First, clone this repository:
+## Output Structure
 
-```bash
-git clone https://github.com/tensorflow/magenta.git
+Generated outputs are saved in the `outputs/` directory:
+
+```
+outputs/
+├── piano_melodies/
+│   └── {story}/
+│       └── {measure}bar/
+│           ├── cluster_{id}.mid        # Extracted melodies
+│           └── interpolations/
+│               └── {transition}/       # e.g., 1to2, 2to3
+│                   └── *.mid           # Interpolated sequences
+├── monophonic_piano_2bar/              # 2-bar extractions
+└── output_16bar_v1/                    # 16-bar outputs
 ```
 
-Next, install the dependencies by changing to the base directory and executing the setup command:
+## Configuration Files
 
-```bash
-pip install -e .
+Each story has JSON configuration files for MusicVAE interpolation:
+
+```json
+{
+    "config": "hierdec-mel_16bar",
+    "checkpoint_file": "hierdec-mel_16bar/hierdec-mel_16bar.ckpt",
+    "mode": "interpolate",
+    "input_midi_1": "outputs/piano_melodies/story/16bar/cluster_1.mid",
+    "input_midi_2": "outputs/piano_melodies/story/16bar/cluster_2.mid",
+    "output_dir": "outputs/piano_melodies/story/16bar/interpolations/1to2",
+    "num_outputs": 5,
+    "temperature": 0.5
+}
 ```
 
-You can now edit the files and run scripts by calling Python as usual. For example, this is how you would run the `melody_rnn_generate` script from the base directory:
+## Dependencies
 
-```bash
-python magenta/models/melody_rnn/melody_rnn_generate --config=...
-```
+Key dependencies added to this project:
 
-You can also install the (potentially modified) package with:
+- `note_seq` - Note sequence manipulation
+- `pretty_midi` - MIDI file operations
+- `pygame` - Audio playback
+- `mido` - MIDI file parsing
+- `mutagen` - Audio metadata (optional)
 
-```bash
-pip install .
-```
+## Original Magenta
 
-Before creating a pull request, please also test your changes with:
+This repository is built on top of Google's Magenta. For the original Magenta documentation, models, and examples, see:
 
-```bash
-pip install pytest-pylint
-pytest
-```
+- [Magenta Website](https://magenta.tensorflow.org)
+- [Magenta GitHub](https://github.com/magenta/magenta)
+- [Magenta.js](https://github.com/tensorflow/magenta-js)
 
-## PIP Release
+## License
 
-To build a new version for pip, bump the version and then run:
-
-```bash
-python setup.py test
-python setup.py bdist_wheel --universal
-twine upload dist/magenta-N.N.N-py2.py3-none-any.whl
-```
+See [LICENSE](LICENSE) for details.

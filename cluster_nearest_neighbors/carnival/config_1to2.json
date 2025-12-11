@@ -1,0 +1,12 @@
+{
+    "config": "hierdec-mel_16bar",
+    "checkpoint_file": "hierdec-mel_16bar/hierdec-mel_16bar.ckpt",
+    "mode": "interpolate",
+    "input_midi_1": "outputs/piano_melodies/carnival/16bar/cluster_1.mid",
+    "input_midi_2": "outputs/piano_melodies/carnival/16bar/cluster_2.mid",
+    "output_dir": "outputs/piano_melodies/carnival/16bar/interpolations/1to2",
+    "num_outputs": 9,
+    "temperature": 0.5,
+    "max_batch_size": 8,
+    "log": "INFO"
+}

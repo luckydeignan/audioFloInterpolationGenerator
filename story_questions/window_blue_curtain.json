@@ -1,0 +1,66 @@
+{
+    "text_title": "The Window and the Blue Curtain",
+    "difficulty": "Easy",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What has covered Jonas's window for the last four months?",
+        "options": {
+          "A": "A blue curtain",
+          "B": "Heavy wooden shutters",
+          "C": "A sheet of plastic",
+          "D": "Metal bars"
+        },
+        "correct_answer": "A",
+        "citation": ""
+      },
+      {
+        "id": 2,
+        "question": "Why does Mrs. Weller knock on Jonas's door?",
+        "options": {
+          "A": "She needs to borrow some sugar.",
+          "B": "She wants to complain about noise.",
+          "C": "Birds are building a nest in his air conditioner.",
+          "D": "She locked herself out of her apartment."
+        },
+        "correct_answer": "C",
+        "citation": ""
+      },
+      {
+        "id": 3,
+        "question": "How does Jonas feel at the beginning of the story?",
+        "options": {
+          "A": "Excited and energetic.",
+          "B": "Sad and isolated.",
+          "C": "Angry and loud.",
+          "D": "Busy and stressed."
+        },
+        "correct_answer": "B",
+        "citation": ""
+      },
+      {
+        "id": 4,
+        "question": "What does Jonas do after he helps Mrs. Weller with the birds?",
+        "options": {
+          "A": "He yells at the birds.",
+          "B": "He goes back to sleep.",
+          "C": "He pulls the curtain aside and eventually opens the window.",
+          "D": "He moves to a different apartment."
+        },
+        "correct_answer": "C",
+        "citation": ""
+      },
+      {
+        "id": 5,
+        "question": "Where does Jonas go at the end of the story?",
+        "options": {
+          "A": "To a riverside gathering with music and lanterns.",
+          "B": "To a job interview.",
+          "C": "To the hospital.",
+          "D": "To the movies."
+        },
+        "correct_answer": "A",
+        "citation": ""
+      }
+    ]
+  }

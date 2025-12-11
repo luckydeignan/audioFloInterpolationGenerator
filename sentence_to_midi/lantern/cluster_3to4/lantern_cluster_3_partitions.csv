@@ -1,0 +1,69 @@
+Partition,ID,Text,V_pred,A_pred,Word_Count
+1,22,"And the seasons—uncaring, unstoppable—shifted onward.",0.39200076,0.17878349,5
+1,23,"One evening, as the daylight thinned into the narrow blue of dusk, Mara found herself standing at the window.",0.39263725,0.15744859,19
+1,24,It was the same window Eli used to decorate with tiny string lights every December.,0.39339238,0.16439168,15
+2,25,"He’d insisted that lights, however small, made the winter feel less bleak.",0.4180803,0.18367569,12
+2,26,Her finger traced the sill.,0.42447606,0.13675289,5
+2,27,"She wasn’t sure why she did it, but she reached into the cabinet where they kept the holiday decorations.",0.40262035,0.16397242,19
+3,28,"Underneath tangled garlands and dusty ornaments, she found a small brass lantern they’d bought on a whim years ago.",0.41386035,0.1718112,19
+3,29,"Eli had planned to hang it on the back porch, but they’d never gotten around to it.",0.43316394,0.15781163,17
+4,30,Mara set it on the sill.,0.45634377,0.13954861,6
+4,31,"It was empty, but she struck a match and placed a small tea light inside.",0.45239103,0.15934476,15
+4,32,"Warm amber flickered across the glass panes, catching motes of dust in the air.",0.46773416,0.1709041,14
+5,33,"The glow felt fragile, almost apologetic.",0.35644448,0.24134451,6
+5,34,"Still, it was something.",0.48352647,0.22427946,4
+5,35,"As she watched the lantern burn, her shoulders eased by an inch—just enough for the air to enter her lungs without resisting.",0.42087713,0.19267397,22
+6,36,"That night, she left the lantern glowing until it guttered out on its own.",0.45485988,0.14682478,14
+6,37,"The next day brought a thin layer of snow, the kind that turned the street into something soft and unhurried.",0.48117828,0.14867772,20
+7,38,"For the first time in weeks, Mara noticed the children across the road playing outside, cheeks red, laughter muffled by scarves.",0.5110591,0.24154831,21
+7,39,"She watched them from behind the window, her hand resting on the cool glass.",0.4668785,0.15089847,14
+8,40,A small boy in a green coat paused and stared at her house.,0.4308893,0.19412352,13
+8,41,"When he spotted the brass lantern, he pointed excitedly before running back to his friends.",0.77536637,0.5690974,15
+8,42,"It startled her—how something so small, so faintly glowing, could draw anyone’s attention.",0.5774453,0.59531003,13
+9,43,"That evening, she lit it again.",0.46238136,0.18842211,6
+9,44,"The day after that, she did the same.",0.4503703,0.18778116,8
+9,45,Soon it became a ritual.,0.47437325,0.18341942,5
+9,46,"At dusk, she would light the lantern, warm her hands near it, then leave it by the window to glow until morning.",0.45655,0.19448167,22
+10,47,"She still moved through her days slowly, still felt Eli’s absence with every breath, but there was a hint—just a hint—of softness around the sharp edges of her grief.",0.2765703,0.1767217,29
+10,48,"One night, there was a knock at the door.",0.3704799,0.22970332,9
+10,49,Mara stiffened.,0.1718969,0.58203757,2
+11,50,"She wasn’t expecting anyone, and most people had stopped dropping by out of respect or discomfort.",0.1811359,0.40980852,16
+11,51,She opened the door only a crack.,0.3095583,0.29133806,7
+11,52,"A woman about her age stood on the porch, bundled in a burgundy coat.",0.3854115,0.25165305,14
+11,53,Her eyes were warm but tentative.,0.41124213,0.23125814,6
+12,54,Mara recognized her vaguely—a neighbor from the next block over.,0.4537897,0.20163937,10
+12,55,"“Hi,” the woman said, offering a gentle smile.",0.5979954,0.31488442,8
+12,56,“Sorry to bother you.,0.47606263,0.20982696,4
+12,57,I just wanted to tell you that your lantern is beautiful.”,0.5405332,0.2978386,11
+12,58,"Mara blinked, unsure what to say.",0.46621802,0.25158295,6
+13,59,"“I walk my dog every evening,” the woman continued.",0.4848963,0.18628007,9
+13,60,“And I always notice it.,0.5032919,0.2766422,5
+13,61,It’s a really lovely light.,0.71274024,0.47010568,5
+13,62,It makes the street feel less lonely.”,0.67296314,0.43841353,7
+13,63,"Something in Mara’s chest tightened, but not painfully this time.",0.31325537,0.35365033,10
+13,64,"“Oh,” she said softly.",0.24915381,0.31636477,4
+14,65,“Thank you.”,0.3741526,0.29508683,2
+14,66,The woman hesitated.,0.45729876,0.23086803,3
+14,67,"“I’m Sara, by the way.”",0.45555905,0.18920666,5
+14,68,“Mara.”,0.47852373,0.19810465,1
+14,69,"“Well… Mara, I hope you keep lighting it.",0.58019733,0.3297754,8
+14,70,It’s nice.”,0.74496603,0.4652861,2
+14,71,"When Sara left, Mara stood in the doorway for a long moment, watching her footprints disappear into the snow.",0.4671679,0.17197849,19
+15,72,"She looked back at the lantern in the window and felt something warm press against her heart—not quite joy, not yet, but something like a beginning.",0.93206114,0.7367132,26
+15,73,"Winter gave way, slowly, reluctantly, to early spring.",0.49128258,0.24889944,8
+15,74,The sky brightened little by little.,0.5250189,0.22417268,6
+16,75,A thin line of green returned to the branches near the house.,0.5254363,0.23314916,12
+16,76,"And Mara—quietly, cautiously—began leaving the house again.",0.46008715,0.27251053,7
+16,77,"At first, just short walks around the block.",0.39252913,0.21488887,8
+16,78,Then longer ones.,0.44392982,0.20480064,3
+16,79,The neighbors who had once spoken to her with hushed sympathy now greeted her with genuine warmth.,0.8084419,0.57658243,17
+17,80,Children raced past her on scooters.,0.6498695,0.41620383,6
+17,81,Dogs tugged at leashes.,0.6328649,0.40165347,4
+17,82,The world buzzed with the easy chatter of people living ordinary lives.,0.81831634,0.5676538,12
+17,83,"The lantern remained in the window, though she replaced the candle inside with a battery-powered flicker.",0.47319555,0.16796587,16
+17,84,"She switched it on each evening, as predictably as the sun setting.",0.44776812,0.14706527,12
+18,85,"One afternoon, while returning from a walk, she heard footsteps catching up behind her.",0.49339777,0.17295852,14
+18,86,“Mara!”,0.5322657,0.25018638,1
+18,87,She turned to see Sara jogging toward her with two steaming cups.,0.5096914,0.24859808,12
+18,88,"“I brought hot chocolate,” she said, slightly out of breath.",0.6729895,0.38299048,10
+18,89,“Thought you might want to share a walk.”,0.64677066,0.36048287,8

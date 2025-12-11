@@ -1,0 +1,28 @@
+Partition,ID,Text,V_pred,A_pred,Word_Count
+1,49,But it was moving.,0.5860991,0.4105363,4
+1,50,"And as Jonas stood there, that fragile warmth in his chest stretched, tentatively unfurling like a leaf testing sunlight.",0.6670108,0.49129248,19
+1,51,The next morning he opened the window entirely.,0.54232347,0.23838478,8
+1,52,"Fresh air rushed in, cool and alive.",0.7207985,0.43384704,7
+2,53,"He heard the sparrows singing, undeterred by yesterday’s inconvenience.",0.74101037,0.4940681,9
+2,54,"He found himself smiling—small at first, then fuller when one bird hopped onto the fire escape railing and cocked its head at him, as if in greeting.",0.9599114,0.7584402,27
+2,55,He made coffee and sat by the light.,0.75703144,0.46780708,8
+3,56,He answered emails with more energy than he’d felt in months.,0.8879046,0.68464434,11
+3,57,He even ventured outside later in the afternoon to buy groceries.,0.71927136,0.47079676,11
+3,58,"The sky was clear, impossibly blue.",0.76470476,0.49243462,6
+3,59,Spring softened the city over the next weeks.,0.5933146,0.27643263,8
+3,60,"Trees blossomed, and with them, Jonas felt something inside thaw.",0.66703373,0.4476089,10
+4,61,"He started noticing small things: a toddler laughing at soap bubbles, a mural he’d never taken the time to appreciate, the barista at the corner café who always drew a tiny heart in milk foam.",0.712702,0.5114844,35
+4,62,He found himself wanting to see Mrs.,0.5960178,0.39004323,7
+5,63,"Weller again, to thank her for nudging him out of the darkness without even meaning to.",0.6004918,0.381983,16
+5,64,"One day, he brought her a small potted plant.",0.5781339,0.31158164,9
+5,65,"She answered the door with delighted surprise, and they talked on her balcony for hours.",0.97372186,0.7922023,15
+5,66,"By May, Jonas began taking long walks in the park.",0.7019779,0.45878175,10
+6,67,He sat under budding trees and read books he had abandoned months before.,0.6987666,0.4271304,13
+6,68,He started painting again—something he hadn’t done seriously since college.,0.5522668,0.27942702,10
+6,69,"The colors felt too bright at first, almost foreign, but soon, he craved them.",0.5826164,0.34416384,14
+6,70,"The city became alive with festivals, music, food stalls.",0.6677146,0.3920196,9
+7,71,One Saturday evening he followed the distant sound of jazz to a riverside gathering.,0.5373292,0.25974503,14
+7,72,Lanterns flickered along the walkway.,0.569115,0.2730717,5
+7,73,People danced with unrestrained joy.,0.9525606,0.7322792,5
+7,74,"Jonas stood at the edge of the crowd, the golden light washing over him.",0.6144199,0.3072292,14
+7,75,Someone bumped his shoulder gently.,0.6439552,0.345498,5

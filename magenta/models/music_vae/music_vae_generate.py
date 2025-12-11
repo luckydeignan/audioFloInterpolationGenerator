@@ -20,6 +20,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import json
 import os
 import sys
 import time
@@ -69,6 +70,46 @@ flags.DEFINE_string(
     'log', 'INFO',
     'The threshold for what messages will be logged: '
     'DEBUG, INFO, WARN, ERROR, or FATAL.')
+flags.DEFINE_string(
+    'json_config', None,
+    'Path to a JSON file containing configuration parameters. '
+    'Parameters in the JSON file will override command-line arguments.')
+
+
+def load_json_config(json_path):
+  """Load configuration from a JSON file and set FLAGS.
+  
+  Args:
+    json_path: Path to the JSON configuration file.
+    
+  Returns:
+    None. Modifies FLAGS directly.
+  """
+  with open(json_path, 'r') as f:
+    config_dict = json.load(f)
+  
+  logging.info('Loading configuration from: %s', json_path)
+  
+  # Map JSON keys to FLAGS
+  flag_mapping = {
+      'run_dir': 'run_dir',
+      'checkpoint_file': 'checkpoint_file',
+      'output_dir': 'output_dir',
+      'config': 'config',
+      'mode': 'mode',
+      'input_midi_1': 'input_midi_1',
+      'input_midi_2': 'input_midi_2',
+      'num_outputs': 'num_outputs',
+      'max_batch_size': 'max_batch_size',
+      'temperature': 'temperature',
+      'log': 'log',
+  }
+  
+  for json_key, flag_name in flag_mapping.items():
+    if json_key in config_dict:
+      value = config_dict[json_key]
+      setattr(FLAGS, flag_name, value)
+      logging.info('  %s: %s', flag_name, value)
 
 
 def _slerp(p0, p1, t):
@@ -119,27 +160,39 @@ def run(config_map):
     input_1 = note_seq.midi_file_to_note_sequence(input_midi_1)
     input_2 = note_seq.midi_file_to_note_sequence(input_midi_2)
 
-    def _check_extract_examples(input_ns, path, input_number):
-      """Make sure each input returns exactly one example from the converter."""
-      tensors = config.data_converter.to_tensors(input_ns).outputs
-      if not tensors:
-        print(
-            'MusicVAE configs have very specific input requirements. Could not '
-            'extract any valid inputs from `%s`. Try another MIDI file.' % path)
-        sys.exit()
-      elif len(tensors) > 1:
-        basename = os.path.join(
-            FLAGS.output_dir,
-            '%s_input%d-extractions_%s-*-of-%03d.mid' %
-            (FLAGS.config, input_number, date_and_time, len(tensors)))
-        for i, ns in enumerate(config.data_converter.from_tensors(tensors)):
-          note_seq.sequence_proto_to_midi_file(
-              ns, basename.replace('*', '%03d' % i))
-        print(
-            '%d valid inputs extracted from `%s`. Outputting these potential '
-            'inputs as `%s`. Call script again with one of these instead.' %
-            (len(tensors), path, basename))
-        sys.exit()
+  def _check_extract_examples(input_ns, path, input_number):
+    """Make sure each input returns exactly one example from the converter."""
+    tensors = config.data_converter.to_tensors(input_ns).outputs
+    if not tensors:
+      print(
+          'MusicVAE configs have very specific input requirements. Could not '
+          'extract any valid inputs from `%s`. Try another MIDI file.' % path)
+      sys.exit()
+    elif len(tensors) > 1:
+      basename = os.path.join(
+          FLAGS.output_dir,
+          '%s_input%d-extractions_%s-*-of-%03d.mid' %
+          (FLAGS.config, input_number, date_and_time, len(tensors)))
+      
+      # PRESERVE ORIGINAL TEMPO: Extract tempo from the input sequence
+      original_qpm = input_ns.tempos[0].qpm if input_ns.tempos else note_seq.DEFAULT_QUARTERS_PER_MINUTE
+      
+      for i, ns in enumerate(config.data_converter.from_tensors(tensors)):
+        # Override the default 120 BPM tempo with the original tempo
+        if ns.tempos:
+          ns.tempos[0].qpm = original_qpm
+        else:
+          ns.tempos.add().qpm = original_qpm
+        
+        note_seq.sequence_proto_to_midi_file(
+            ns, basename.replace('*', '%03d' % i))
+      print(
+          '%d valid inputs extracted from `%s`. Outputting these potential '
+          'inputs as `%s`. Call script again with one of these instead.' %
+          (len(tensors), path, basename))
+      sys.exit()
+    else:
+      logging.info("YAY VALID EXAMPLE")
     logging.info(
         'Attempting to extract examples from input MIDIs using config `%s`...',
         FLAGS.config)
@@ -158,6 +211,13 @@ def run(config_map):
 
   if FLAGS.mode == 'interpolate':
     logging.info('Interpolating...')
+    
+    # Get the tempos from the input files
+    tempo_1 = input_1.tempos[0].qpm if input_1.tempos else 120.0
+    tempo_2 = input_2.tempos[0].qpm if input_2.tempos else 120.0
+    
+    logging.info('Start tempo: %.1f BPM, End tempo: %.1f BPM', tempo_1, tempo_2)
+    
     _, mu, _ = model.encode([input_1, input_2])
     z = np.array([
         _slerp(mu[0], mu[1], t) for t in np.linspace(0, 1, FLAGS.num_outputs)])
@@ -165,6 +225,19 @@ def run(config_map):
         length=config.hparams.max_seq_len,
         z=z,
         temperature=FLAGS.temperature)
+    
+    # Interpolate tempos and apply to each result
+    interpolated_tempos = np.linspace(tempo_1, tempo_2, FLAGS.num_outputs)
+    
+    logging.info('Applying interpolated tempos to generated sequences:')
+    for i, (tempo) in enumerate(interpolated_tempos):
+        # Set the interpolated tempo for this result
+        if results[i].tempos:
+            results[i].tempos[0].qpm = tempo
+        else:
+            results[i].tempos.add().qpm = tempo
+        logging.info('  Step %d: %.1f BPM', i, tempo)
+    
   elif FLAGS.mode == 'sample':
     logging.info('Sampling...')
     results = model.sample(
@@ -184,6 +257,12 @@ def run(config_map):
 
 
 def main(unused_argv):
+  # Load JSON config if provided
+  if FLAGS.json_config:
+    if not os.path.exists(FLAGS.json_config):
+      raise ValueError('JSON config file not found: %s' % FLAGS.json_config)
+    load_json_config(FLAGS.json_config)
+  
   logging.set_verbosity(FLAGS.log)
   run(configs.CONFIG_MAP)
 

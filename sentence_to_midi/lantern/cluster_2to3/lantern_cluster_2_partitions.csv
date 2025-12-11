@@ -1,0 +1,11 @@
+Partition,ID,Text,V_pred,A_pred,Word_Count
+1,12,Now its heartbeat felt like one more reminder that his had stopped.,0.0663829,0.26737952,12
+1,13,"It had been three months, and Mara still woke up each morning half-expecting to find him downstairs, stirring eggs with music playing far too loud.",0.2092155,0.24111919,25
+2,14,"But every morning, she walked into the same still kitchen.",0.0964182,0.24137345,10
+2,15,"The house’s emptiness echoed back at her, saying what the world kept trying to say: he is gone, and you are alone.",0.046357553,0.25919953,22
+2,16,"Outside, the winter sky was the same dull gray as the day he died.",0.2506209,0.18865727,14
+3,17,The thing that hurt most wasn’t the memory of the accident.,0.091629066,0.22215575,11
+3,18,It was the life that simply kept going.,0.060496304,0.24278873,8
+3,19,The mail still came.,0.20073739,0.21642436,4
+3,20,Trash day still arrived.,0.2498118,0.21195515,4
+3,21,"Neighbors still waved politely, pity softening their eyes.",0.20698029,0.22125371,8

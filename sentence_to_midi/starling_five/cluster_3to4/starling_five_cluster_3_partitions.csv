@@ -1,0 +1,38 @@
+Partition,ID,Text,V_pred,A_pred,Word_Count
+1,17,Nothing felt wrong.,0.45795473,0.35417417,3
+1,18,Until the third day.,0.33475766,0.37354636,4
+1,19,Rowan was the first to notice the slight dip in oxygen levels.,0.25834346,0.35633513,12
+1,20,Not enough to alarm anyone—ships fluctuated all the time—but enough to log it.,0.34714496,0.26591685,13
+2,21,"By day four, the dip had grown more noticeable. “Sensor malfunction?” Samir suggested. “Maybe,” Jin said.",0.3603912,0.29780522,16
+2,22,But he didn’t sound convinced.,0.3501175,0.3208419,5
+2,23,They ran diagnostics.,0.38792333,0.27410755,3
+2,24,Twice.,0.38573655,0.301259,1
+2,25,Three times.,0.36492705,0.32352763,2
+2,26,The readings were all correct.,0.40676937,0.26727158,5
+3,27,"Something was draining oxygen from the environmental system. “Leak?” Mira asked. “No leak,” Aleya said softly. “We would have seen pressure changes.” They checked seals, conduits, tanks, vents.",0.3217319,0.32728574,28
+3,28,Everything appeared intact.,0.33405378,0.32057413,3
+3,29,"Yet the oxygen kept dropping—in tiny increments at first, then faster.",0.15344988,0.61773163,11
+3,30,"By day five, the alarms began.",0.15271279,0.6983438,6
+4,31,The crew’s excitement dissolved into focused tension.,0.23877378,0.595965,7
+4,32,"Mira scanned every panel, every chart. “We need to isolate the cause.",0.24196132,0.5510907,12
+4,33,"We turn back now.” “Agreed,” Rowan said. “Even with conservation measures, we might not have enough to make it home.” They initiated the return jump.",0.33753937,0.274722,25
+5,34,Nothing happened.,0.25969344,0.46349174,2
+5,35,Jin slammed the controls again. “Drive coils aren’t engaging.” “Diagnostics!” Mira ordered.,0.21349718,0.5904548,12
+5,36,"As the system analyzed itself, the crew silently gripped their seats.",0.21807195,0.44003162,11
+5,37,"The ship’s hum sounded lower now, as though it too were struggling to breathe.",0.1540838,0.47051755,14
+6,38,The results appeared on the screen: Power reroute failure.,0.31623927,0.3661425,9
+6,39,Environmental systems drawing excess energy.,0.3292325,0.33945656,5
+6,40,"Cause unknown. “What does that mean?” Samir asked, voice cracking. “It means,” Jin said, “something in our life-support system is consuming more power than it should.” “And oxygen,” Rowan added grimly.",0.15289997,0.49321544,31
+7,41,The crew worked nonstop.,0.2690954,0.39158925,4
+7,42,"Mira assigned shifts, but no one slept.",0.30151984,0.33960637,7
+7,43,"They floated through the ship like ghosts, drifting from panel to conduit to emergency manual.",0.30332989,0.3408014,15
+7,44,"On day six, the music stopped.",0.29409018,0.3420468,6
+7,45,Not by choice—the internal power-saving protocol cut non-essentials.,0.3683223,0.22383402,8
+7,46,"On day seven, sleep became unavoidable.",0.37163624,0.22910395,6
+8,47,Their words slurred.,0.30152443,0.28873935,3
+8,48,Movements slowed.,0.27610493,0.31197664,2
+8,49,"Mira caught Aleya drifting unconscious and shook her awake. “Sorry,” Aleya murmured. “Just tired.” “We all are,” Mira said softly. “But we keep going.” They found the problem on day eight.",0.36620352,0.31339777,31
+8,50,A microfracture—no larger than a fingernail—hidden in a second-layer filtration pipe.,0.33738002,0.30361387,11
+9,51,Invisible to sensors until the pressure difference grew significant.,0.34678704,0.30760342,9
+9,52,The crack allowed ambient hydrogen from their propulsion tank to seep into the oxygen filtration system.,0.2436847,0.47003692,16
+9,53,"The reaction consumed oxygen slowly at first, then exponentially as the imbalance grew.",0.15101038,0.6260653,13

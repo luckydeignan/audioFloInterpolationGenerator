@@ -1,0 +1,66 @@
+{
+    "text_title": "The Carnival Packed Away",
+    "difficulty": "Easy",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Where is Lucy at the beginning of the story?",
+        "options": {
+          "A": "At school",
+          "B": "At a summer carnival",
+          "C": "At the library",
+          "D": "At her grandmother’s house"
+        },
+        "correct_answer": "B",
+        "citation": ""
+      },
+      {
+        "id": 2,
+        "question": "Who is Lucy with at the carnival?",
+        "options": {
+          "A": "Her best friend",
+          "B": "Her younger brother, Theo",
+          "C": "Her entire class",
+          "D": "Her grandmother"
+        },
+        "correct_answer": "B",
+        "citation": ""
+      },
+      {
+        "id": 3,
+        "question": "What happens that changes Lucy's mood?",
+        "options": {
+          "A": "She gets a phone call that her grandmother is sick.",
+          "B": "She drops her ice cream.",
+          "C": "It starts to rain heavily.",
+          "D": "The carnival closes early."
+        },
+        "correct_answer": "A",
+        "citation": ""
+      },
+      {
+        "id": 4,
+        "question": "How does the carnival seem to Lucy after she gets the bad news?",
+        "options": {
+          "A": "It looks even more beautiful.",
+          "B": "It feels too loud, too bright, and wrong.",
+          "C.": "It becomes very quiet.",
+          "D": "She doesn't notice any difference."
+        },
+        "correct_answer": "B",
+        "citation": ""
+      },
+      {
+        "id": 5,
+        "question": "What does Lucy realize when she visits the boardwalk on the last night?",
+        "options": {
+          "A": "She wants to be a carnival worker.",
+          "B": "She hates fireworks.",
+          "C": "Happiness is something you can't hold onto forever.",
+          "D": "She should have ridden the Ferris wheel one more time."
+        },
+        "correct_answer": "C",
+        "citation": ""
+      }
+    ]
+  }

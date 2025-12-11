@@ -1,0 +1,18 @@
+Partition,ID,Text,V_pred,A_pred,Word_Count
+1,32,"The sparrows chirped from a nearby branch, annoyed and curious.",0.29301345,0.6078313,10
+1,33,"One hopped closer, bold and unafraid.",0.51339173,0.39494604,6
+1,34,"Jonas felt a tiny bubble in his chest—something like warmth but unfamiliar, fragile.",0.66135573,0.5530174,13
+1,35,Mrs.,0.56350315,0.37096128,1
+1,36,"Weller brought him tea afterward, insisting he sit with her on her balcony.",0.53185034,0.25789353,13
+2,37,"She told him stories about the neighborhood: the building super who loved classical music, the teenager across the hall who practiced violin at inconvenient hours, the couple upstairs expecting their first child.",0.53063625,0.24419354,32
+2,38,Jonas hadn’t known any of this.,0.45847666,0.17752127,6
+2,39,He hadn’t wanted to.,0.307378,0.22278468,4
+2,40,"After he left, the blue curtain in his apartment felt heavier than usual.",0.20219684,0.23395607,13
+3,41,"That evening he stood in front of it, fingers wrapped around the edge of the fabric.",0.2683545,0.21487506,16
+3,42,The streetlights outside glowed faintly through the weave.,0.37179866,0.16575955,8
+3,43,"It was the glow of a world continuing, indifferent to his grief but not hostile to his return.",0.3556066,0.17932126,18
+3,44,He pulled the curtain aside.,0.4158675,0.17091681,5
+3,45,The world outside wasn’t extraordinary.,0.42013094,0.18595262,5
+3,46,A dog walker passing by.,0.4402914,0.20401376,5
+3,47,A delivery cyclist stopped at a red light.,0.44128728,0.20306742,8
+3,48,Tree branches still bare from winter.,0.43591586,0.20020641,6

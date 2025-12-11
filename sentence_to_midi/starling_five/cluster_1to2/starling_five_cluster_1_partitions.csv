@@ -1,0 +1,7 @@
+Partition,ID,Text,V_pred,A_pred,Word_Count
+1,0,"The Starling Five launched from Orbit Station Helios just after sunrise, though sunrise was more a concept than a view at that altitude.",0.4867816,0.19338207,23
+1,1,"Still, the crew cheered as the engines burned the edge of the world into a band of shimmering gold.",0.7990259,0.50837666,19
+2,2,"Captain Mira Solène floated weightlessly in the command deck, grinning at her four teammates. “All right, team,” she said. “First deep-range survey mission.",0.8208798,0.5726085,23
+2,3,"Let’s make history.” The crew—Samir, Jin, Aleya, and Rowan—shouted back in overlapping excitement.",0.9331052,0.7230604,13
+2,4,"For them, this wasn’t just a mission; it was the realization of childhood dreams.",0.86725223,0.63707846,14
+2,5,"They’d trained together for years, bonded through simulations and sleepless nights and shared ambitions.",0.77429116,0.51493025,14
